@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Boxes</title>
+    <style>
+        body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.linkedIn {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.linkedInSearch {
+    width: 300px;
+    outline: none;
+}
+
+.linkedInButton {
+    border: none;
+    background-color: #0069FF;
+    border-radius: 20px;
+    color: whitesmoke;
+    font-weight: 600;
+    height: 35px;
+    width: 200px;
+}
+
+.linkedInAgreement,
+.linkedInEmail {
+    color: grey;
+    font-size: 12px;
+}
+
+.twitter {
+    display: flex;
+    gap: 4px;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tweetButton {
+    height: 30px;
+    width: 65px;
+    border: none;
+    background-color: #0069FF;
+    border-radius: 20px;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.twitterSearch {
+    border: none;
+}
+
+.cat {
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.search {
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0.1px 0.1px 3px grey;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.googleSearch {
+    width: 350px;
+    border: none;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 60px;
+    box-shadow: 0.1px 0.1px 2px grey;
+    height: 30px;
+}
+
+    </style>
+</head>
+
+<body>
+    <input class="search" type="text" placeholder="Search">
+    <hr>
+    <input class="googleSearch" type="text" placeholder="Search Google or type a URL">
+    <hr>
+    <div class="linkedIn">
+        <div class="linkedInEmail">Email</div>
+        <input type="text" class="linkedInSearch">
+        <div class="linkedInAgreement">By clicking Agree & Join, you agree to the Privacy Policy.</div>
+        <button class="linkedInButton">Agree & Join</button>
+    </div>
+    <hr>
+    <div class="twitter">
+        <img class="cat" src="images/cat.jpg" alt="Insert image">
+        <input class="twitterSearch" type="text" placeholder="What's happening?">
+        <button class="tweetButton">Tweet</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+.addToCart {
+    width: 100px;
+    border-radius: 40px;
+    border: none;
+    background-color: #FFD814;
+    height: 30px;
+    margin-right: 10px;
+}
+.buyNow {
+    width: 100px;
+    border-radius: 40px;
+    border: none;
+    background-color: #f0931a;
+    height: 30px;
+}

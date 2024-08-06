@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute 2</title>
+    <style>
+        body{
+            height: 2200px;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .container {
+            border: solid grey 1px;
+            width: 150px;
+            height: 150px;
+            position: relative;
+            .offer{
+                color: white;
+                background-color: rgb(90, 89, 89);
+                position: absolute;
+                right: 1px;
+                top: 1px;
+                font-size: 12px;
+                padding: 2px;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+            .tab {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 100%;
+                height: 50px;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.6);
+                button{
+                    height: 30px;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/tshirt.jpg" alt="">
+        <div class="offer">20% OFF</div>
+        <div class="tab">
+            <button>Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Grid</title>
+    <style>
+        .cat {
+            width: 35px;
+            height: 35px;
+            border-radius: 100px;
+            object-fit: cover;
+        }
+
+        .catCard {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            gap: 5px;
+            box-shadow: 0px 0px 10px rgb(160, 157, 157);
+
+        }
+
+        .cat2 {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            align-self: center;
+        }
+
+        .catName {
+            margin: 0;
+            margin-left: 10px;
+            font-weight: 600;
+        }
+
+        .catCaption {
+            margin: 0;
+            margin-left: 10px;
+            font-size: 14px;
+            color: rgb(94, 92, 92);
+        }
+
+        .catButton {
+            margin: 0;
+            margin-left: 10px;
+            width: 90px;
+            height: 30px;
+            margin-top: 4px;
+            margin-bottom: 10px;
+            border: none;
+            background-color: #0069FF;
+            border-radius: 3px;
+            color: whitesmoke;
+        }
+
+        .catButton:hover {
+            cursor: pointer;
+        }
+
+        .catCards {
+            display: flex;
+            gap: 10px;
+            width: 620px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="catCards">
+        <div class="catCard">
+            <img class="cat2" src="images/cat.jpg" alt="Insert image">
+            <p class="catName">Oliver</p>
+            <p class="catCaption">2 mutual Friends</p>
+            <button class="catButton">Add Friend</button>
+        </div>
+        <div class="catCard">
+            <img class="cat2" src="images/cat.jpg" alt="Insert image">
+            <p class="catName">Oliver</p>
+            <p class="catCaption">2 mutual Friends</p>
+            <button class="catButton">Add Friend</button>
+        </div>
+        <div class="catCard">
+            <img class="cat2" src="images/cat.jpg" alt="Insert image">
+            <p class="catName">Oliver</p>
+            <p class="catCaption">2 mutual Friends</p>
+            <button class="catButton">Add Friend</button>
+        </div>
+
+    </div>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Grid</title>
+    <style>
+        .cat {
+            width: 35px;
+            height: 35px;
+            border-radius: 100px;
+            object-fit: cover;
+        }
+
+        .catCard {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 5px;
+            box-shadow: 0px 0px 10px rgb(160, 157, 157);
+            padding: 10px;
+        }
+
+        .cat2 {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            align-self: center;
+        }
+
+        .catName {
+            margin: 0;
+            margin-left: 10px;
+            font-weight: 600;
+        }
+
+        .catCaption {
+            margin: 0;
+            margin-left: 10px;
+            font-size: 14px;
+            color: rgb(94, 92, 92);
+        }
+
+        .catButton {
+            margin: 0;
+            margin-left: 10px;
+            width: 90px;
+            height: 30px;
+            margin-top: 4px;
+            margin-bottom: 10px;
+            border: none;
+            background-color: #0069FF;
+            border-radius: 3px;
+            color: whitesmoke;
+        }
+
+        .catButton:hover {
+            cursor: pointer;
+        }
+
+        .catCards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .catCard {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="catCards">
+        <div class="catCard">
+            <img class="cat2" src="images/cat.jpg" alt="Insert image">
+            <p class="catName">Oliver</p>
+            <p class="catCaption">2 mutual Friends</p>
+            <button class="catButton">Add Friend</button>
+        </div>
+        <div class="catCard">
+            <img class="cat2" src="images/cat.jpg" alt="Insert image">
+            <p class="catName">Oliver</p>
+            <p class="catCaption">2 mutual Friends</p>
+            <button class="catButton">Add Friend</button>
+        </div>
+        <div class="catCard">
+            <img class="cat2" src="images/cat.jpg" alt="Insert image">
+            <p class="catName">Oliver</p>
+            <p class="catCaption">2 mutual Friends</p>
+            <button class="catButton">Add Friend</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

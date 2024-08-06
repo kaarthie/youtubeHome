@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .f1 {
+            display: flex;
+            flex-direction: row;
+            .blue {
+                background-color: aqua;
+                width: 200px;
+            }
+            .pink {
+                background-color: pink;
+                width: 75px;
+            }
+        }
+        .f2{
+            display: flex;
+            flex-direction: row;
+            .blue1 {
+                background-color: aqua;
+                width: 50px;
+            }
+            .pink1 {
+                background-color: pink;
+                flex: 1;
+            }
+            .blue2 {
+                background-color: aqua;
+                width: 75px;
+            }
+        }
+        .f3{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;        
+            .item {
+                background-color: pink;
+            }
+        }
+        .f4 {
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            border: grey solid 1px;
+            .item{
+                background-color: pink;
+            }
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="f1">
+        <div class="blue">200px</div>
+        <div class="pink">75px</div>
+    </div>
+    <hr>
+    <div class="f2">
+        <div class="blue1">item 1</div>
+        <div class="pink1">item 2</div>
+        <div class="blue2">item 3</div>
+    </div>
+    <hr>
+    <div class="f3">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+        <div class="item">item4</div>
+    </div>
+    <hr>
+    <div class="f4">
+        <div class="item">item 1</div>
+        <div class="item">item 2</div>
+    </div>
+</body>
+</html>

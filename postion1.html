@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .main {
+            width: 100px;
+            height: 10px;
+            background-color: aqua;
+            border: black solid 1px;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        /* 
+        body {
+            height: 3000px;
+
+        } */
+
+        .sidebar {
+            width: 100px;
+            background-color: blueviolet;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        .modal {
+            width: 500px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 5px;
+            background-color: white;
+            border: solid grey 1px;
+            position: fixed;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+
+        .outer {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.2);
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar"></div>
+
+    <div class="outer">
+        <div class="modal">
+            <div class="title">Modal Title</div>
+            <div class="caption">This is a modal</div>
+            <div class="title">
+                <button class="closeButton">Close</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

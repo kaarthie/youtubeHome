@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div 2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .tweet {
+            display: flex;
+            gap: 4px;
+            vertical-align: middle;
+            font-family: Arial, Helvetica, sans-serif;
+            box-shadow: 0px 0px 5px rgb(160, 157, 157);
+            padding: 10px;
+            width: 300px;
+            border-radius: 5px;
+        }
+
+        .tweetButton {
+            height: 30px;
+            width: 65px;
+            border: none;
+            background-color: #0069FF;
+            border-radius: 20px;
+            color: whitesmoke;
+            font-weight: 600;
+        }
+
+        .twitterSearch {
+            border: none;
+        }
+
+        .cat {
+            width: 35px;
+            height: 35px;
+            border-radius: 100px;
+            object-fit: cover;
+        }
+
+        .catCard {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            gap: 5px;
+            box-shadow: 0px 0px 10px rgb(160, 157, 157);
+
+        }
+
+        .cat2 {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            align-self: center;
+        }
+
+        .catName {
+            margin: 0;
+            margin-left: 10px;
+            font-weight: 600;
+        }
+
+        .catCaption {
+            margin: 0;
+            margin-left: 10px;
+            font-size: 14px;
+            color: rgb(94, 92, 92);
+        }
+
+        .catButton {
+            margin: 0;
+            margin-left: 10px;
+            width: 90px;
+            height: 30px;
+            margin-top: 4px;
+            margin-bottom: 10px;
+            border: none;
+            background-color: #0069FF;
+            border-radius: 3px;
+            color: whitesmoke;
+        }
+
+        .catButton:hover{
+            cursor: pointer;
+        }
+        .catCards {
+            display: flex;
+            gap: 10px;
+            width: 620px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tweet">
+        <img class="cat" src="images/cat.jpg" alt="Insert image">
+        <input class="twitterSearch" type="text" placeholder="What's happening?">
+        <button class="tweetButton">Tweet</button>
+    </div>
+    <hr>
+    <div class="catCard">
+        <img class="cat2" src="images/cat.jpg" alt="Insert image">
+        <p class="catName">Oliver</p>
+        <p class="catCaption">2 mutual Friends</p>
+        <button class="catButton">Add Friend</button>
+    </div>
+<hr>
+    <div class="catCards">
+        <div class="catCard">
+            <img class="cat2" src="images/cat.jpg" alt="Insert image">
+            <p class="catName">Oliver</p>
+            <p class="catCaption">2 mutual Friends</p>
+            <button class="catButton">Add Friend</button>
+        </div>
+        <div class="catCard">
+            <img class="cat2" src="images/cat.jpg" alt="Insert image">
+            <p class="catName">Oliver</p>
+            <p class="catCaption">2 mutual Friends</p>
+            <button class="catButton">Add Friend</button>
+        </div>
+        <div class="catCard">
+            <img class="cat2" src="images/cat.jpg" alt="Insert image">
+            <p class="catName">Oliver</p>
+            <p class="catCaption">2 mutual Friends</p>
+            <button class="catButton">Add Friend</button>
+        </div>
+            
+    </div>
+</body>
+
+</html>
