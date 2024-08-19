@@ -1,0 +1,187 @@
+.header {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    column-gap: 25px;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: solid rgb(221, 221, 221) 1px;
+
+    .left {
+        padding-left: 25px;
+        width: 150px;
+        display: flex;
+        column-gap: 25px;
+        padding-right: 25px;
+        align-self: center;
+
+
+        .youtubeLogo {
+            width: 85px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            align-items: center;
+            align-self: center;
+        }
+
+        .menuButton {
+            width: 25px;
+            align-items: center;
+            align-self: center;
+        }
+    }
+
+    .middle {
+        flex: 1;
+        display: flex;
+        align-self: center;
+        justify-content: space-between;
+        height: 100%;
+        padding-right: 15px;
+
+        .searchInput {
+            flex: 1;
+            align-self: center;
+            justify-self: center;
+            height: 30px;
+            display: flex;
+
+            input {
+                font-size: 16px;
+                height: 100%;
+                width: 100%;
+                align-self: center;
+                padding-top: 5px;
+                padding-left: 10px;
+                padding-bottom: 5px;
+                border: rgb(159, 159, 159) 1px solid;
+                border-right: none;
+                outline: none;
+            }
+        }
+
+        .searchButton,
+        .voiceSearchButton {
+            width: 25px;
+            height: 30px;
+            display: flex;
+            align-self: center;
+        }
+
+        .searchButton {
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-right: 15px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+
+            img {
+                align-self: center;
+            }
+
+            border: rgb(159, 159, 159) 1px solid;
+
+        }
+
+        .voiceSearchButton {
+            img {
+                height: 25px;
+                align-self: center;
+                justify-content: center;
+                background-color: rgb(233, 233, 233);
+                border-radius: 100px;
+                padding: 7px;
+            }
+        }
+
+    }
+
+    .right {
+        width: 200px;
+        display: flex;
+        column-gap: 22px;
+        align-items: center;
+        padding-left: 10px;
+
+        .uploadButton {
+            width: 25px;
+        }
+
+        .applicationsButton {
+            width: 25px;
+        }
+
+        .notificationsButton {
+            position: relative;
+            width: 25px;
+
+            .notificationsNumber {
+                font-size: 10px;
+                border-radius: 10px;
+                color: white;
+                background-color: rgb(197, 0, 0);
+                position: absolute;
+                top: -1px;
+                right: -1px;
+                padding: 2.5px;
+                width: 10px;
+                height: 10px;
+                font-weight: 00;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        .profileButton {
+            width: 25px;
+
+            img {
+                width: 30px;
+                border-radius: 25px;
+            }
+        }
+    }
+}
+
+.searchButton,
+.voiceSearchButton,
+.uploadButton,
+.applicationsButton,
+.notificationsButton,
+.profileButton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tooltip {
+    position: absolute;
+    border-radius: 2px;
+    color: white;
+    font-weight: 500;
+    background-color: rgb(155, 155, 155);
+    padding: 5px 10px;
+    font-size: 12px;
+    align-self: center;
+    bottom: -30px;
+    justify-items: center;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.searchButton:hover .tooltip,
+.voiceSearchButton:hover .tooltip,
+.uploadButton:hover .tooltip,
+.applicationsButton:hover .tooltip,
+.notificationsButton:hover .tooltip,
+.profileButton:hover .tooltip {
+    opacity: 1;
+}
